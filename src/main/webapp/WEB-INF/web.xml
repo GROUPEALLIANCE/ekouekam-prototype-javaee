@@ -8,6 +8,10 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>JeuPendu</servlet-name>
 		<servlet-class>com.oz.webPendu.JeuPenduServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>Aide</servlet-name>
+		<servlet-class>com.oz.webPendu.ServletAide</servlet-class>
+	</servlet>
 	<!-- JSPC servlet mappings start -->
 
     <servlet>
