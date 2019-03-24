@@ -1,0 +1,112 @@
+The TaskContainer.add() method has been deprecated and is scheduled to be removed in Gradle 2.0. Please use the create() method instead.
+The ConfigurationContainer.add() method has been deprecated and is scheduled to be removed in Gradle 2.0. Please use the create() method instead.
+The SourceSetContainer.add() method has been deprecated and is scheduled to be removed in Gradle 2.0. Please use the create() method instead.
+The groovy configuration has been deprecated and is scheduled to be removed in Gradle 2.0. Typically, usages of 'groovy' can simply be replaced with 'compile'. In some cases, it may be necessary to additionally configure the 'groovyClasspath' property of GroovyCompile and Groovydoc tasks.
+:tasks
+
+------------------------------------------------------------
+All tasks runnable from root project
+------------------------------------------------------------
+
+Build tasks
+-----------
+assemble - Assembles the outputs of this project.
+build - Assembles and tests this project.
+buildDependents - Assembles and tests this project and all projects that depend on it.
+buildNeeded - Assembles and tests this project and all projects it depends on.
+clean - Deletes the build directory.
+jar - Assembles a jar archive containing the main classes.
+war - Generates a war archive with all the compiled classes, the web-app content and the libraries.
+
+Build Setup tasks
+-----------------
+setupBuild - Initializes a new Gradle build. [incubating]
+
+Documentation tasks
+-------------------
+groovydoc - Generates Groovydoc API documentation for the main source code.
+javadoc - Generates Javadoc API documentation for the main source code.
+
+Fat JAR tasks
+-------------
+fatJar - Assembles the fat JAR
+fatJarPrepareFiles - Prepare files for the fat JAR
+slimWar - Creates war file with all dependencies and classes bundled inside one fat JAR
+
+Gaelyk tasks
+------------
+gaelykCopyRuntimeLibraries - Synchronises runtime libraries in webapp directory.
+gaelykInstallPlugin - Installs Gaelyk plugin.
+gaelykListInstalledPlugins - Lists installed Gaelyk plugins.
+gaelykListPlugins - Lists available Gaelyk plugins from catalogue.
+gaelykPrecompileGroovlet - Precompiles Groovlets.
+gaelykPrecompileTemplate - Precompiles Groovlets.
+gaelykUninstallPlugin - Uninstalls Gaelyk plugin.
+
+Google App Engine tasks
+-----------------------
+gaeConfigureBackends - Configures backends on App Engine.
+gaeCronInfo - Get cron information from App Engine.
+gaeDeleteBackend - Deletes backend on App Engine.
+gaeDownloadApp - Retrieves the most current version of your application.
+gaeDownloadSdk - Downloads and sets Google App Engine SDK.
+gaeEnhance - Enhances DataNucleus classes.
+gaeExplodeWar - Explodes WAR archive into directory.
+gaeFunctionalTest - Runs functional tests
+gaeListBackends - Lists backends on App Engine.
+gaeLogs - Download logs from App Engine.
+gaeRollback - Undoes a partially completed update for the given application.
+gaeRollbackBackend - Rolls back backend on App Engine.
+gaeRun - Starts up a local App Engine development server.
+gaeStartBackend - Starts backend on App Engine.
+gaeStop - Stops local App Engine development server.
+gaeStopBackend - Stops backend on App Engine.
+gaeUpdate - Updates your application on App Engine.
+gaeUpdateAll - Updates your application and all backends on App Engine.
+gaeUpdateAllBackends - Updates all backends on App Engine.
+gaeUpdateBackend - Updates backend on App Engine.
+gaeUpdateCron - Updates scheduled tasks definition (known as cron jobs) on App Engine.
+gaeUpdateDos - Updates DoS protection configuration on App Engine.
+gaeUpdateIndexes - Updates indexes on App Engine.
+gaeUpdateQueues - Updates task queues on App Engine.
+gaeVacuumIndexes - Deletes unused indexes on App Engine.
+gaeVersion - Prints detailed version information about the SDK, Java and the operating system.
+
+Help tasks
+----------
+dependencies - Displays all dependencies declared in root project 'ekouekam-prototype-javaee'.
+dependencyInsight - Displays the insight into a specific dependency in root project 'ekouekam-prototype-javaee'.
+help - Displays a help message
+projects - Displays the sub-projects of root project 'ekouekam-prototype-javaee'.
+properties - Displays the properties of root project 'ekouekam-prototype-javaee'.
+tasks - Displays the tasks runnable from root project 'ekouekam-prototype-javaee' (some of the displayed tasks may belong to subprojects).
+
+IDE tasks
+---------
+cleanEclipse - Cleans all Eclipse files.
+cleanIdea - Cleans IDEA project files (IML, IPR)
+eclipse - Generates all Eclipse files.
+idea - Generates IDEA project files (IML, IPR, IWS)
+
+Verification tasks
+------------------
+check - Runs all checks.
+test - Runs the unit tests.
+
+Other tasks
+-----------
+cleanIdeaWorkspace
+
+Rules
+-----
+Pattern: build<ConfigurationName>: Assembles the artifacts of a configuration.
+Pattern: upload<ConfigurationName>: Assembles and uploads the artifacts belonging to a configuration.
+Pattern: clean<TaskName>: Cleans the output files of a task.
+Pattern: gaelykCreateController<ControllerName>: Creates a Gaelyk controller (Groovlet).
+Pattern: gaelykCreateView<ViewName>: Creates a Gaelyk view (Groovy template).
+
+To see all tasks and more detail, run with --all.
+
+BUILD SUCCESSFUL
+
+Total time: 12.916 secs
